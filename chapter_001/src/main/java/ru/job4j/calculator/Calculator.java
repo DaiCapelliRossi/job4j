@@ -14,6 +14,7 @@ public class Calculator {
      * Сложение.
      * @param first первый аргумент
      * @param second второй аргумент
+     * @return результат сложения
      */
     public static void add(double first, double second) {
         double result =  first + second;
@@ -24,6 +25,7 @@ public class Calculator {
      * Деление.
      * @param first первый аргумент
      * @param second второй аргумент
+     * @return результат деления
      */
     public static void div(double first, double second) {
         double result = first / second;
@@ -34,6 +36,7 @@ public class Calculator {
      * Умножение.
      * @param first первый аргумент
      * @param second второй аргумент
+     * @return результат умножения
      */
     public static void multiply(double first, double second) {
         double result = first * second;
@@ -44,6 +47,7 @@ public class Calculator {
      * Вычитание.
      * @param first первый аргумент
      * @param second второй аргумент
+     * @return результат вычитания
      */
     public static void subtract(double first, double second) {
         double result = first - second;
