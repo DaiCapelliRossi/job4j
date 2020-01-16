@@ -8,8 +8,7 @@ public class Car {
         boolean canDrive = this.volume > 0;
         if (canDrive) {
             System.out.println("Beep! I can drive!");
-        }
-        else {
+        } else {
             System.out.println("Oh. I am tired. I can't drive.");
         }
     }

@@ -34,7 +34,7 @@ public class Converter {
         System.out.println("140 rubles are 2 euros. Test result : " + passed);
 
         int in2 = 360;
-        int expected2= 6;
+        int expected2 = 6;
         int out2 = rubleToDollar(in2);
         boolean passed2 = expected2 == out2;
         System.out.println("360 rubles are 6 dollars. Test result : " + passed2);

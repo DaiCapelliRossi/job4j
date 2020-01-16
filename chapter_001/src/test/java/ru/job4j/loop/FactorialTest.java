@@ -9,14 +9,14 @@ public class FactorialTest {
     @Test
     public void whenCalculateFactorialForFiveThenOneHundreedTwenty() {
         int result = Factorial.calc(5);
-        assertThat(result,Is.is(120));
+        assertThat(result, Is.is(120));
         //напишите здесь тест, проверяющий, что факториал для числа 5 равен 120.
     }
 
     @Test
     public void whenCalculateFactorialForZeroThenOne() {
         int result = Factorial.calc(0);
-        assertThat(result,Is.is(1));
+        assertThat(result, Is.is(1));
         //напишите здесь тест, проверяющий, что факториал для числа 0 равен 1.
     }
 }

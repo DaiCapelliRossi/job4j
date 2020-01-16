@@ -10,12 +10,12 @@ public class Lessonseven {
 
         System.out.println("First massive");
         int[] numbers = new int[5];
-        for(int i = 0; i !=5;i++){
+        for (int i = 0; i != 5; i++) {
             int value = numbers[i];
             System.out.println(value);
         }
         System.out.println("Second massive");
-        for(int i = 0; i != 5; i++){
+        for (int i = 0; i != 5; i++) {
             numbers[i] = numbers.length - i;
             System.out.println(numbers[i]);
         }
@@ -44,7 +44,7 @@ String[] flats = {
         System.out.println(Arrays.toString(data));
 
         System.out.println("Matrix");
-        int[][] table = new int [5][5];
+        int[][] table = new int[5][5];
         int count = 0;
         for (int out = 0; out != 5; out++) {
             for (int inner = 0; inner != 5; inner++) {
@@ -64,9 +64,9 @@ String[] flats = {
         // переместим вторую и третью единицу, чтобы получить линию из единиц ( 1-е [] - индекс внешнего массива, 2-е - значение в массиве)
         int temp = field[1][1]; // 0
         field[1][1] = field[2][1]; // 0 => 1
-        field [2][1] = temp; // 1 => 0
+        field[2][1] = temp; // 1 => 0
 
-        temp = field [0][2]; // 1
+        temp = field[0][2]; // 1
         field[0][2] = field[1][2]; // 1 => 0
         field[1][2] = temp; // 0 => 1
         for (int index = 0; index != 3; index++) {

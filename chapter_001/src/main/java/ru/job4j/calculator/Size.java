@@ -5,14 +5,14 @@ public class Size {
         int result = left + Math.abs(right);
         return result;
     }
-    public void info (int size) {
+    public void info(int size) {
         System.out.println("Your size is: " + size);
     }
     public static void main(String[] args) {
         Size size = new Size();
         int nike = 10;
         int puma = 50;
-        int value = size.add(nike,puma);
+        int value = size.add(nike, puma);
         size.info(value);
     }
 }

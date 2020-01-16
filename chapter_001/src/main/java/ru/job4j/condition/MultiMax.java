@@ -9,7 +9,7 @@ public class MultiMax {
             result = maximum ? first : third;
         } else {
             maximum = second > third;
-            result = maximum? second : third;
+            result = maximum ? second : third;
         }
         return result;
     }
