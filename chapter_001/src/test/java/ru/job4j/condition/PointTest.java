@@ -3,7 +3,7 @@ package ru.job4j.condition;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PointTest {
+/*public class PointTest {
 
     @Test
     public void distance() {
@@ -19,3 +19,4 @@ public class PointTest {
 
 
 }
+*/
