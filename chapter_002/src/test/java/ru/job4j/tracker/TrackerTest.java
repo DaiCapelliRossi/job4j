@@ -50,4 +50,20 @@ public class TrackerTest {
         tracker.replace(id, bugWithDesc);
         assertThat(tracker.findById(id).getName(), is("Bug with description"));
     }
+
+    @Test
+    public void whenDelete() {
+        Tracker tracker = new Tracker();
+        Item bug = new Item("Bug");
+        Item butterfly = new Item("Butterfly");
+        tracker.add(bug);
+        tracker.add(butterfly);
+        String id = bug.getId();
+        tracker.delete(id);
+        assertThat(tracker.findById(id), is(nullValue()));
+    }
+
+    private Object nullValue() {
+        return null;
+    }
 }

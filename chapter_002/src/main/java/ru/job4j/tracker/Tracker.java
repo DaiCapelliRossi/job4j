@@ -63,6 +63,9 @@ public class Tracker {
     }
 
     public Item findById(String id) {
+        if (indexOf(id) == -1) {
+            return null;
+        }
         return items[indexOf(id)];
     }
 
@@ -73,5 +76,12 @@ public class Tracker {
         return true;
     }
 
+    public boolean delete(String id) {
+        int i = indexOf(id);
+        items[position] = null;
+        System.arraycopy(items, i + 1, items, i, position - i);
+        position--;
+        return true;
+    }
 
 }
