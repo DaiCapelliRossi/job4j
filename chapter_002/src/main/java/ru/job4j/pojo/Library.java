@@ -1,8 +1,5 @@
 package ru.job4j.pojo;
 
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
-
 public class Library {
     public static void main(String[] args) {
         Book a = new Book("Sapiens: A Brief History of Humankind", 443);
