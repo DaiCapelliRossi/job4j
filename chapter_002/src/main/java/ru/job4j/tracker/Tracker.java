@@ -78,8 +78,8 @@ public class Tracker {
 
     public boolean delete(String id) {
         int i = indexOf(id);
-        items[position] = null;
         System.arraycopy(items, i + 1, items, i, position - i);
+        items[position - 1] = null;
         position--;
         return true;
     }
