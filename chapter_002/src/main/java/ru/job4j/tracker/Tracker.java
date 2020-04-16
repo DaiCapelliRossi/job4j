@@ -71,17 +71,25 @@ public class Tracker {
 
     public boolean replace(String id, Item item) {
         int indexId = indexOf(id);
-        item.setId(id);
-        items[indexId] = item;
-        return true;
+        if (indexId == -1) {
+            return false;
+        } else {
+            item.setId(id);
+            items[indexId] = item;
+            return true;
+        }
     }
 
     public boolean delete(String id) {
         int i = indexOf(id);
-        System.arraycopy(items, i + 1, items, i, position - i);
-        items[position - 1] = null;
-        position--;
-        return true;
+        if (i == -1) {
+            return false;
+        } else {
+            System.arraycopy(items, i + 1, items, i, position - i);
+            items[position - 1] = null;
+            position--;
+            return true;
+        }
     }
 
 }
