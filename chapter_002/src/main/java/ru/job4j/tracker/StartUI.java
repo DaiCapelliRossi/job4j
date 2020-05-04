@@ -1,8 +1,5 @@
 package ru.job4j.tracker;
 
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
-
 public class StartUI {
     
     public void init(Input input, Tracker tracker, UserAction[] actions) {
@@ -27,7 +24,7 @@ public class StartUI {
         Tracker tracker = new Tracker();
         UserAction[] actions = {
                 new CreateAction(),
-                new ShowAllAction(),
+                new FindAllAction(),
                 new EditAction(),
                 new DeleteAction(),
                 new FindByIdAction(),
