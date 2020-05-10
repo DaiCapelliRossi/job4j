@@ -22,7 +22,7 @@ public class ConsoleInput implements Input {
         if (select >= 0 && select < max) {
             return select;
         } else {
-            throw new IllegalStateException(String.format("Out of bound %s > [0, %s]", select, max));
+            throw new IllegalStateException(String.format("Out of bounds for %s > [0, %s]", select, max));
         }
     }
 }
