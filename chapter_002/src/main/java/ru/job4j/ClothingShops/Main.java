@@ -7,5 +7,6 @@ public class Main {
 
         ClothingShop gucci = new Gucci();
         gucci.sellClothes(ClothesType.COSTUME);
+        gucci.sellClothes(ClothesType.HAT);
     }
 }

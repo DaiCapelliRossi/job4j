@@ -11,6 +11,9 @@ public class Gucci extends ClothingShop {
             case COSTUME:
                 clothes = new GucciCostume();
                 break;
+            case HAT:
+                clothes = new GucciHat();
+                break;
         }
         return clothes;
     }

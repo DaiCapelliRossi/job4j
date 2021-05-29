@@ -12,6 +12,9 @@ public class Zara extends ClothingShop {
             case COSTUME:
                 clothes = new ZaraCostume();
                 break;
+            case HAT:
+                clothes = new ZaraHat();
+                break;
         }
         return clothes;
     }
