@@ -1,4 +1,4 @@
-package ru.job4j.ClothingShops;
+package ru.job4j.shops;
 
 public abstract class Clothes {
     public String name;

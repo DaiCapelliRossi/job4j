@@ -1,7 +1,7 @@
-package ru.job4j.ClothingShops;
+package ru.job4j.shops;
 
-public class ZaraDress extends Dress {
-    String name = "Zara dress";
+public class ZaraHat extends Hat {
+    String name = "Zara hat";
 
     public void setName(String name) {
         this.name = name;

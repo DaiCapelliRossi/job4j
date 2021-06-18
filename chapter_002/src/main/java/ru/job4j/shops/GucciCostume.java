@@ -1,4 +1,4 @@
-package ru.job4j.ClothingShops;
+package ru.job4j.shops;
 
 public class GucciCostume extends Costume {
     String name = "Gucci costume";

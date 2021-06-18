@@ -1,4 +1,4 @@
-package ru.job4j.ClothingShops;
+package ru.job4j.shops;
 
 public class Main {
     public static void main(String[] args) {
