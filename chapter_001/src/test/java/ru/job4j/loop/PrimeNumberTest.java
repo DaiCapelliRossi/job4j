@@ -13,12 +13,6 @@ public class PrimeNumberTest {
         assertThat(count, is(3));
     }
 
-    @Test
-    public void when11() {
-        PrimeNumber prime = new PrimeNumber();
-        int count = prime.calc(11);
-        assertThat(count, is(5));
-    }
 
     @Test
     public void when2() {
