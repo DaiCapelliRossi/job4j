@@ -2,6 +2,14 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс - модель пользователя
+ * Хранит данные о паспорте и имени
+ * @author ANASTASIA OSTROUMOVA
+ * @version 1.0
+ */
+
+
 public class User {
     private String passport;
     private String username;
@@ -27,6 +35,11 @@ public class User {
         this.username = username;
     }
 
+    /**
+     * Сравнение пользователей осуществляется по полю паспорт
+     * @param o принимает объект класса Objects
+     * @return true, если реквизиты равны
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) {
