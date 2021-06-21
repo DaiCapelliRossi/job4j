@@ -3,8 +3,8 @@ package ru.job4j.bank;
 import java.util.Objects;
 
 /**
- * Класс - модель пользователя
- * Хранит данные о паспорте и имени
+ * Класс - модель пользователя.
+ * Хранит данные о паспорте и имени.
  * @author ANASTASIA OSTROUMOVA
  * @version 1.0
  */
@@ -36,9 +36,9 @@ public class User {
     }
 
     /**
-     * Сравнение пользователей осуществляется по полю паспорт
-     * @param o принимает объект класса Objects
-     * @return true, если реквизиты равны
+     * Сравнение пользователей осуществляется по полю паспорт.
+     * @param o принимает объект класса Objects.
+     * @return true, если реквизиты равны, false - если не равны.
      */
     @Override
     public boolean equals(Object o) {

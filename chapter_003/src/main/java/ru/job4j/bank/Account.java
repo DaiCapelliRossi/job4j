@@ -3,8 +3,8 @@ package ru.job4j.bank;
 import java.util.Objects;
 
 /**
- * Класс - модель аккаунта
- * Хранит данные о реквизитах и балансе
+ * Класс - модель счета.
+ * Хранит данные о реквизитах и балансе.
  * @author ANASTASIA OSTROUMOVA
  * @version 1.0
  */
@@ -35,9 +35,9 @@ public class Account {
     }
 
     /**
-     * Сравнение счетов осузесьвляется по полю реквизиты
-     * @param o принимает объект класса Objects
-     * @return true, если реквизиты равны
+     * Сравнение счетов осуществляется по полю реквизиты.
+     * @param o принимает объект класса Objects.
+     * @return true, если реквизиты равны, false - если не равны.
      */
     @Override
     public boolean equals(Object o) {
