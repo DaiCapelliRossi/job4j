@@ -1,8 +1,8 @@
 package ru.job4j.stream;
 
-import java.util.Objects;
+import java.util.*;
 
-public class Address {
+public class Address implements Comparable<Address> {
     private String city;
 
     private String street;
@@ -36,5 +36,21 @@ public class Address {
     @Override
     public int hashCode() {
         return Objects.hash(city, street, home, apartment);
+    }
+
+    @Override
+    public int compareTo(Address o) {
+        return city.compareTo(o.city);
+    }
+
+    public static void main(String[] args) {
+        List<Address> addresses = new ArrayList<>();
+        addresses.add(new Address("Moscow", "Arbat str.", 17, 29));
+        addresses.add(new Address("St.Petersburg", "Nevskiy pr.", 27, 129));
+        addresses.add(new Address("Ekaterinburg", "Lenina str.", 9, 85));
+        Collections.sort(addresses);
+        for (Address a : addresses) {
+            System.out.println(a.city);
+        }
     }
 }
