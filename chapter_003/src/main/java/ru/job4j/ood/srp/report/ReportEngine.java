@@ -4,6 +4,7 @@ import ru.job4j.ood.srp.formatter.DateTimeParser;
 import ru.job4j.ood.srp.model.Employee;
 import ru.job4j.ood.srp.store.Store;
 
+import javax.xml.bind.JAXBException;
 import java.util.Calendar;
 import java.util.function.Predicate;
 
@@ -26,7 +27,7 @@ public class ReportEngine implements Report {
     }
 
     @Override
-    public String generate(Predicate<Employee> filter) {
+    public String generate(Predicate<Employee> filter) throws JAXBException {
         StringBuilder text = new StringBuilder();
         text.append("Name; Hired; Fired; Salary;")
                 .append(System.lineSeparator());

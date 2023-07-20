@@ -1,27 +1,28 @@
 package ru.job4j.ood.srp.report;
 
-import ru.job4j.ood.srp.currency.Currency;
 import ru.job4j.ood.srp.formatter.DateTimeParser;
 import ru.job4j.ood.srp.model.Employee;
 import ru.job4j.ood.srp.store.Store;
-
 import java.util.Calendar;
+import java.util.Comparator;
+import java.util.List;
 import java.util.function.Predicate;
 
-public class ReportEngineIT extends ReportEngine {
-    public ReportEngineIT(Store store, DateTimeParser<Calendar> dateTimeParser) {
+public class ReportEngineHr extends ReportEngine {
+
+    public ReportEngineHr(Store store, DateTimeParser<Calendar> dateTimeParser) {
         super(store, dateTimeParser);
     }
 
     @Override
     public String generate(Predicate<Employee> filter) {
+        List<Employee> employees = getStore().findBy(filter);
+        employees.sort(Comparator.comparing(Employee::getSalary).reversed());
         StringBuilder text = new StringBuilder();
-        text.append("Name;Hired;Fired;Salary")
+        text.append("Name; Salary;")
                 .append(System.lineSeparator());
-        for (Employee employee : super.getStore().findBy(filter)) {
-            text.append(employee.getName()).append(";")
-                    .append(super.getDateTimeParser().parse(employee.getHired())).append(";")
-                    .append(super.getDateTimeParser().parse(employee.getFired())).append(";")
+        for (Employee employee : employees) {
+            text.append(employee.getName()).append(" ")
                     .append(employee.getSalary())
                     .append(System.lineSeparator());
         }

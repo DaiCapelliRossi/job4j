@@ -1,9 +1,10 @@
 package ru.job4j.ood.srp.formatter;
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class ReportDateTimeParser implements DateTimeParser<Calendar> {
+public class ReportDateTimeParser implements DateTimeParser<Calendar>, Serializable {
 
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd:MM:yyyy HH:mm");
 

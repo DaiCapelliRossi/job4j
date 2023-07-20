@@ -1,13 +1,18 @@
 package ru.job4j.ood.srp.model;
 
 import java.util.Calendar;
+import java.util.List;
 import java.util.Objects;
+import javax.xml.bind.annotation.XmlRootElement;
 
 public class Employee {
     private String name;
     private Calendar hired;
     private Calendar fired;
     private double salary;
+
+    public Employee() {
+    }
 
     public Employee(String name, Calendar hired, Calendar fired, double salary) {
         this.name = name;
@@ -65,3 +70,4 @@ public class Employee {
         return Objects.hash(name);
     }
 }
+
