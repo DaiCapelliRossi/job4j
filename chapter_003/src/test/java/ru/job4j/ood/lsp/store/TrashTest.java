@@ -1,7 +1,9 @@
 package ru.job4j.ood.lsp.store;
 
 import junit.framework.TestCase;
-import ru.job4j.ood.lsp.model.Food;
+import ru.job4j.ood.lsp.storing.model.Food;
+import ru.job4j.ood.lsp.storing.store.Store;
+import ru.job4j.ood.lsp.storing.store.Trash;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;

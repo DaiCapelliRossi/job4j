@@ -1,10 +1,10 @@
-package ru.job4j.ood.lsp;
+package ru.job4j.ood.lsp.storing;
 
-import ru.job4j.ood.lsp.distribution.ControlQuality;
-import ru.job4j.ood.lsp.model.Food;
-import ru.job4j.ood.lsp.store.Shop;
-import ru.job4j.ood.lsp.store.Trash;
-import ru.job4j.ood.lsp.store.Warehouse;
+import ru.job4j.ood.lsp.storing.distribution.ControlQuality;
+import ru.job4j.ood.lsp.storing.model.Food;
+import ru.job4j.ood.lsp.storing.store.Shop;
+import ru.job4j.ood.lsp.storing.store.Trash;
+import ru.job4j.ood.lsp.storing.store.Warehouse;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;

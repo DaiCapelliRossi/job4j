@@ -1,4 +1,4 @@
-package ru.job4j.ood.lsp.model;
+package ru.job4j.ood.lsp.storing.model;
 
 import java.util.Calendar;
 import java.util.Objects;

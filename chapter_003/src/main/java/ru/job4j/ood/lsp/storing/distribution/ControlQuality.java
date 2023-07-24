@@ -1,7 +1,7 @@
-package ru.job4j.ood.lsp.distribution;
+package ru.job4j.ood.lsp.storing.distribution;
 
-import ru.job4j.ood.lsp.model.Food;
-import ru.job4j.ood.lsp.store.Store;
+import ru.job4j.ood.lsp.storing.model.Food;
+import ru.job4j.ood.lsp.storing.store.Store;
 
 import java.util.ArrayList;
 import java.util.Calendar;
