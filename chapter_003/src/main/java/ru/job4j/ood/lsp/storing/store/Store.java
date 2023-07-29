@@ -12,4 +12,6 @@ public interface Store {
     List<Food> findAll();
 
     List<Food> findBy(Predicate<Food> filter);
+
+    public List<Food> pickUpAll();
 }

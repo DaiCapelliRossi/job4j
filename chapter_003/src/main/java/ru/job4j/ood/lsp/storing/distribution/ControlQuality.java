@@ -21,9 +21,9 @@ public class ControlQuality {
         Calendar expire = food.getExpiryDate();
         Calendar today = Calendar.getInstance();
         double shelfLife = expire.getTimeInMillis() - create.getTimeInMillis();
-        double daysOnTheShelf = today.getTimeInMillis() -  create.getTimeInMillis();
+        double daysOnTheShelf = today.getTimeInMillis() - create.getTimeInMillis();
 
-        return  (Math.ceil(daysOnTheShelf / shelfLife * 100));
+        return (Math.ceil(daysOnTheShelf / shelfLife * 100));
     }
 
     public void redistribute(Food food) {
@@ -39,6 +39,16 @@ public class ControlQuality {
                 System.out.print(f.getName() + " - " + f.getPrice() + "; ");
             }
             System.out.println();
+        }
+    }
+
+    public void resort() {
+        List<Food> allFood = new ArrayList<>();
+        for (Store s : stores) {
+            allFood.addAll(s.pickUpAll());
+        }
+        for (Food food : allFood) {
+            redistribute(food);
         }
     }
 }

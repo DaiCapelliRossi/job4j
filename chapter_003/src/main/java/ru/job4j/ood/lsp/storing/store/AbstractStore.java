@@ -25,4 +25,10 @@ public abstract class AbstractStore implements Store {
     public List<Food> findBy(Predicate<Food> filter) {
         return foods.stream().filter(filter).collect(Collectors.toList());
     }
+    @Override
+    public List<Food> pickUpAll() {
+        List<Food> list = new ArrayList<>(this.foods);
+        this.foods.clear();
+        return list;
+    }
 }

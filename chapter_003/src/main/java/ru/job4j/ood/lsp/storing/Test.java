@@ -34,5 +34,8 @@ public class Test {
         }
 
         controlQuality.showProductDistribution();
+        controlQuality.resort();
+        System.out.println("After redistribution");
+        controlQuality.showProductDistribution();
     }
 }

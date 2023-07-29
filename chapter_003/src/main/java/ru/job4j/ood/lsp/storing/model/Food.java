@@ -9,6 +9,7 @@ public class Food {
     private Calendar expiryDate;
     private double price;
     private double discount;
+    private boolean onSale;
 
     public Food(String name, Calendar createDate, Calendar expiryDate, double price, double discount) {
         this.name = name;
@@ -56,6 +57,14 @@ public class Food {
 
     public void setDiscount(int discount) {
         this.discount = discount;
+    }
+
+    public boolean isOnSale() {
+        return onSale;
+    }
+
+    public void setOnSale() {
+        this.onSale = !onSale;
     }
 
     @Override

@@ -9,9 +9,11 @@ public class Shop extends AbstractStore {
         if (percentOfShelfLife >= 25 && percentOfShelfLife < 75) {
             findAll().add(food);
         } else if (percentOfShelfLife >= 75 && percentOfShelfLife <= 100) {
-            food.setPrice(food.getPrice() * ((100 - food.getDiscount()) / 100));
+            if(!food.isOnSale()) {
+                food.setPrice(food.getPrice() * ((100 - food.getDiscount()) / 100));
+            }
             findAll().add(food);
-            food.setName(food.getName() + " (on sale)");
+            food.setOnSale();
         }
     }
 }
